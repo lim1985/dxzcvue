@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>扫一扫查看效果</title>
+  <style>#output img{ margin: 0 auto; width: 200px; border-radius: 15px; border: solid 10px #fff;}</style>
+</head>
+<body ontouchstart="" style="width: 600px; margin: auto; text-align: center; background:#007FC4 ; padding-top: 250px;"> 
+  <div class="container-share">
+  	<div class="QR-code">
+  		<p class="saoma-title" style="color: #fff; margin: 0 auto;">扫一扫查看效果</p>
+  	<p id="output"></p>
+  	</div>
+  </div>
+  <script src="js/zepto.min.js"></script>
+  <script src="js/qrcode.min.js"></script> 
+  <script >
+  	$(document).ready(function() {
+	(function() {
+		new QRCode(document.getElementById('output'), 'http://trade.wssign.com/app-product/dai/index.html');
+				
+			})();
+})
+  </script>
+</body></html>
